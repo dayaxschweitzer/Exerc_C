@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double preco, dinheiro, troco, pagar;
+    int quant;
+
+    printf("Preco unitario do produto: ");
+    scanf("%lf", &preco);
+
+    printf("Quantidade comprada: ");
+    scanf("%d", &quant);
+
+    printf("Dinheiro Recebido: ");
+    scanf("%lf", &dinheiro);
+
+    pagar = (preco * quant);
+    troco = dinheiro - pagar;
+
+    printf("Troco: %2.f", troco);
+
+    return 0;
+}
