@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+double A, B, C, area_Quad, area_triang, area_trap;
+
+printf("Digite a medida A: ");
+scanf("%lf", &A);
+
+printf("Digite a medida B: ");
+scanf("%lf", &B);
+
+printf("Digite a medida C: ");
+scanf("%lf", &C);
+
+area_Quad = A * A;
+printf("AREA DO QUADRADO = %.4lf\n", area_Quad);
+
+area_triang = (A * B) / 2;
+printf("AREA DO TRIANGULO = %.4lf\n", area_triang);
+
+area_trap = ((A + B)*C)/2;
+printf("AREA DO TRAPEZIO = %.4lf\n", area_trap);
+
+    return 0;
+}
+
