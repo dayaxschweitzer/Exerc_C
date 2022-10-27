@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double med1, med2, med3, maior;
+
+    printf("Medida 1: ");
+    scanf("%lf", &med1);
+
+    printf("Medida 2: ");
+    scanf("%lf", &med2);
+
+    printf("Medida 3: ");
+    scanf("%lf", &med3);
+
+    if (med1 > med2 && med1 > med3){
+        maior = med1;
+    }
+    else if (med2 > med1 && med2 > med3){
+        maior = med2;
+    }
+    else {
+        maior = med3;
+    }
+
+    printf("MAIOR DISTANCIA = %.2lf\n", maior);
+
+    return 0;
+}
